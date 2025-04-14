@@ -1,0 +1,97 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.contenedor{
+    background: #EFEFBB;  
+    background: -webkit-linear-gradient(to right, #D4D3DD, #EFEFBB);  
+    background: linear-gradient(to right, #D4D3DD, #EFEFBB);
+    display: grid;
+    grid-gap: 5px;
+    grid-template-areas:"cabecera cabecera cabecera"
+                        "contenido1 contenido1 contenido1"
+                        "pie pie pie" ;
+}
+/*Cabecera*/
+.contenedor .cabecera{
+    grid-area: cabecera;
+    margin: 0 auto;
+}
+.navbar {
+    height: 100px; 
+}
+.navbar-collapse {
+    width: 100%; 
+    height: 60px; 
+}
+.navbar-nav .nav-link {
+    font-size: 22px; 
+}
+.border-menu {
+    background-color: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(5px); 
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+/*Contenido 1*/
+.contenedor .contenido1{
+    grid-area: contenido1;
+    padding: 50px;
+}
+.accordion-item {
+    background-color: rgba(255, 255, 255, 0.1); 
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+}
+
+.accordion-button {
+    background-color: rgba(255, 255, 255, 0.05); 
+    color: #000; 
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: rgba(255, 255, 255, 0.1); 
+}
+
+.accordion-body {
+    background-color: rgba(255, 255, 255, 0.05); 
+    color: #000; 
+}
+/*pie*/
+.contenedor .pie{
+    grid-area: pie;
+    position: relative;
+    width: 100%;
+}
+.pie-contenido {
+    position: absolute;
+    bottom: 30px; 
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    z-index: 10; 
+}
+.pie-titulo h2 {
+    color: #333; 
+    margin: 0;
+}
+.redes-iconos {
+    display: flex;
+    gap: 15px;
+}
+.redes-icono img {
+    width: 30px; 
+    height: 30px;
+}
+.pie svg {
+    position: relative;
+    z-index: 5;
+    width: 100%;
+}
+.redes-icono i {
+    padding: 15px;
+    font-size: 50px;
+    color: #333; 
+}
